@@ -1,5 +1,23 @@
 <footer id="footer">
-  <div class="container">
-        
+    <div class="container">
+        <div class="row">
+            <div class="footer-cols">
+                <div class="footer-col left">
+                    <%= image_tag 'logo.svg', :alt=>'Pittsburgh Pirates logo', :class=>'footer-logo-primary' %>
+                    <address>
+                        PNC Park<br>
+                        115 Federal St.<br>
+                        Pittsburgh, PA 15212
+                    </address>
+                </div>
+                <div class="footer-col right footer-logos">
+                    <%= image_tag 'logo-mlb.svg', :alt=>'Major League Baseball logo', :width=>'75' %>
+                    <%= image_tag 'logo-pirates-com.svg', :alt=>'Pirates.com logo', :width=>'150' %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <p class="copyright">&copy; Pittsburgh Pirates, 2021</p>
+        </div>
     </div>
 </footer>

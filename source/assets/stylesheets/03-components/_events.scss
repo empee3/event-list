@@ -1,0 +1,67 @@
+/* ================================
+   Event Components
+   ================================ */
+
+.event-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 100%);
+    padding-bottom: 8em;
+    @media (min-width: $bp-sm-medium) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: $bp-large) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--block {
+        background-color: $white;
+        border: 1px solid $light-gray;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.event-grid--block-image {
+    position: relative;
+    img {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.event-grid--block--desc {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 1em 1.5em;
+    position: relative;
+
+    p {
+        line-height: 1.5;
+        margin: 0;
+        width: 100%;
+    }
+    .event-title {
+        font: {
+            size: rem(18);
+            weight: $bold;
+        }
+        margin: 0;
+    }
+    .event-promo {
+        i {
+            color: $green;
+            font-size: rem(18);
+        }
+        font-size: rem(14);
+        line-height: 2.5;
+    }
+    .btn {
+        display: inline-block;
+        align-self: flex-end;
+        margin-top: 1.2em;
+    }
+}

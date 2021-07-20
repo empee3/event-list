@@ -1,11 +1,20 @@
 @charset "utf-8";
 
+//Normalize CSS
+@import "01-config/normalize";
+
 //SASS Variables
 @import "01-config/variables";
+@import "01-config/mixins";
+@import "01-config/typography";
 
 //Grid
 @import "02-grid/grid";
 
 //Components
+@import "03-components/body";
 @import "03-components/header";
+@import "03-components/events";
+@import "03-components/buttons";
+@import "03-components/footer";
 

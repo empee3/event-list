@@ -1,0 +1,29 @@
+/* ================================
+   Body
+   ================================ */
+
+body {
+    background-color: $off-white;
+    font-family: $font-stack-sans;
+}   
+
+address {
+    font: {
+        style: normal;
+        size: rem(20);
+    }
+    @media (min-width: $bp-sm-medium) {
+        font-size: rem(16);
+    }
+}
+
+.skip-to-content {
+    left: 50%;
+    position: absolute;
+    transform: translateY(-100%);
+}
+
+h1 {
+    font-size: rem(38);
+    margin: 1.5em 0;
+}
