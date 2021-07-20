@@ -21,7 +21,11 @@ layout: main
         <div class="event-col col-right">
             <div class="event-and-promo-callout">
                 <figure>
-                    <%= image_tag 'pirates-hawaiian-shirt.png', :alt=>'Pittsburgh Pirates white, yellow and green Hawaiian style shirt' %>
+                    <picture>
+                        <source srcset="/assets/images/pirates-hawaiian-shirt.webp" type="image/webp">
+                        <source srcset="/assets/images/pirates-hawaiian-shirt.jpg" type="image/jpeg">
+                        <%= image_tag 'pirates-hawaiian-shirt.png', :alt=>'Pittsburgh Pirates white, yellow and green Hawaiian style shirt' %>
+                    </picture>
                     <figcaption>Pittsburgh Pirates Hawaiian Shirt, presented by Bradenton Convention & Visitor's Bureau.</figcaption>
                 </figure>
             </div>
