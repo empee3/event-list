@@ -7,6 +7,10 @@ body {
     font-family: $font-stack-sans;
 }   
 
+main {
+    padding-bottom: 10em;
+}
+
 address {
     font: {
         style: normal;
@@ -15,6 +19,15 @@ address {
     @media (min-width: $bp-sm-medium) {
         font-size: rem(16);
     }
+}
+
+figcaption {
+    color: $med-gray;
+    font: {
+        size: rem(15);
+        style: italic;
+    }
+    line-height: 1.4;
 }
 
 .skip-to-content {

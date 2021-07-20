@@ -6,7 +6,6 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(1, 100%);
-    padding-bottom: 8em;
     @media (min-width: $bp-sm-medium) {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -63,5 +62,35 @@
         display: inline-block;
         align-self: flex-end;
         margin-top: 1.2em;
+    }
+}
+
+.event--columns {
+    display: flex;
+    flex-wrap: wrap;
+    .col-left {
+        width: 100%;
+        @media (min-width: $bp-medium) {
+            width: 70%;
+        }
+    }
+    .col-right {
+        text-align: center;
+        width: 100%;
+        @media (min-width: $bp-medium) {
+            width: 30%;
+        }
+        img {
+            height: auto;
+            max-width: 250px;
+            width: 100%;
+        }
+    }
+}
+
+.event-and-promo-description {
+    p {
+        font-size: rem(20);
+        line-height: 1.6;
     }
 }
