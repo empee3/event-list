@@ -16,16 +16,6 @@ footer {
         max-width: 40px;
     }
 
-    .footer-logos {
-        justify-content: center;
-        @media (min-width: $bp-medium) {
-            justify-content: flex-end;
-        }
-        img {
-            margin-left: 1em;
-        }
-    }
-
     .footer-cols {
         display: flex;
         flex-wrap: wrap;
@@ -42,9 +32,22 @@ footer {
         padding-bottom: 2em;
         width: 75%;
         @media (min-width: $bp-sm-medium) {
+            justify-content: left;
             width: 50%;
         }
     }
+
+    .footer-logos {
+        justify-content: center;
+        @media (min-width: $bp-medium) {
+            justify-content: flex-end;
+        }
+        img {
+            margin-left: 1em;
+        }
+    }
+
+
     .copyright {
         font-size: rem(14);
         margin: 1.8em 0 0 0;
