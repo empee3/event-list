@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+    <%= partial "/base/head" %>
+    <body class="<%= page_classes %>" data-hijacking="off" data-animation="scaleDown">
+  	    <a class="skipnav" href="#maincontent">Skip to main content</a>
+        <%= partial "/custom/header" %>
+  	    <main id="maincontent">
+            <%= yield %>
+        </main><!--#maincontent for accessibility skip to main content link-->
+        <%= partial "/custom/footer" %>
+    </body>
+</html>

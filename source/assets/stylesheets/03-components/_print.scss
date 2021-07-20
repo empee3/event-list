@@ -1,0 +1,25 @@
+/* Custom Print Styles */
+@media print {
+	* {
+        color: black !important;
+		// page-break-before: auto !important;
+		// page-break-inside: auto !important;
+		// page-break-after: auto !important;
+	}
+    h1, h2, h3, h4, h5, h6{
+        color: black !important;
+    }
+    .main-body{
+        width: 100%;
+    }
+    header,
+    footer,
+    .side-column,
+    .back-to-top,
+    .mobile-side-nav{
+        display: none !important;
+    }
+
+
+
+}

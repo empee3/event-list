@@ -1,0 +1,11 @@
+*.x[Cc][Oo][Nn][Ff][Ii][Gg]
+*.log
+/masterpages/umb*.master
+/App_Data
+/ci-resources
+/[Mm][Ee][Dd][Ii][Aa]
+/leads
+config/applications.config
+config/trees.config
+/node_modules
+/build/node_modules
