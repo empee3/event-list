@@ -94,3 +94,17 @@
         line-height: 1.6;
     }
 }
+
+.back-to-home {
+    padding-top: 2em;
+    a {
+        color: darken($green, 10%);
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    i {
+        font-size: rem(14);
+    }
+}
