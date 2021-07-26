@@ -1,0 +1,14 @@
+select {
+    font-size: rem(20);
+    border: 2px solid $black;
+    width: 80%;
+    @media (min-width: $bp-medium) {
+        width: 30%;
+    }
+}
+
+button {
+    background: $yellow;
+    color: $black;
+}
+
