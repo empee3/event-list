@@ -1,14 +1,36 @@
-select {
-    font-size: rem(20);
-    border: 2px solid $black;
-    width: 80%;
-    @media (min-width: $bp-medium) {
-        width: 30%;
-    }
+
+
+.event--filters {
+    background-color: $white;
+    border: 1px solid rgba($med-gray, .5);
+    border-radius: 5px;
+    margin-bottom: 1.8em;
+    padding: 1.3em 1em;
 }
 
-button {
-    background: $yellow;
-    color: $black;
+#filter-events {
+    display: flex;
+    flex-wrap: wrap;
+    label {
+        display: block;
+        font: {
+            family: $font-stack-sans;
+            size: rem(18);
+            weight: $semibold;
+        }
+        padding-bottom: .5em;
+        width: 100%;
+    }
+    select {
+        background-color: $off-white;
+        border: 1px solid $black;
+        font-size: rem(20);
+        margin-bottom: 5px;
+        width: 100%;
+        @media (min-width: $bp-sm-medium) {
+            margin: 0 5px 0 0;
+            width: 30%;
+        }
+    }
 }
 
